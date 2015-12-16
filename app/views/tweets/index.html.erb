@@ -1,0 +1,8 @@
+<h1>@<%= @screen_name %>'s Tweets</h1>
+
+<% @tweets.each do |tweet| %>
+<%= tweet.text %><br>
+<% end %>
+
+
+<%= link_to "logout", logout_path %>
