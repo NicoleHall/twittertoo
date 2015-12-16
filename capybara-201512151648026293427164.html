@@ -1,0 +1,114 @@
+ActionController::RoutingError at /home
+=======================================
+
+> uninitialized constant TweetsController
+
+test/integration/user_can_see_profile_details_test.rb, line 8
+-------------------------------------------------------------
+
+``` ruby
+    3   class UserCanSeeProfileDetailsTest < ActionDispatch::IntegrationTest
+    4   
+    5     test "user sees account details after logging in" do
+    6       visit "/"
+    7       assert_equal 200, page.status_code
+>   8       click_link "login"
+    9       assert_equal "/home", current_path
+   10       assert page.has_content?("@ColeMersich")
+   11       assert page.has_content?("351")
+   12       assert page.has_content?("90")
+   13       save_and_open_page
+```
+
+App backtrace
+-------------
+
+ - test/integration/user_can_see_profile_details_test.rb:8:in `block in <class:UserCanSeeProfileDetailsTest>'
+
+Full backtrace
+--------------
+
+ - actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:65:in `rescue in controller'
+ - actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+ - actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:41:in `serve'
+ - actionpack (4.2.4) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+ - actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `serve'
+ - actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:821:in `call'
+ - omniauth (1.2.2) lib/omniauth/strategy.rb:404:in `call_app!'
+ - omniauth (1.2.2) lib/omniauth/strategy.rb:262:in `mock_call!'
+ - omniauth (1.2.2) lib/omniauth/strategy.rb:181:in `call!'
+ - omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call'
+ - omniauth (1.2.2) lib/omniauth/builder.rb:59:in `call'
+ - rack (1.6.4) lib/rack/etag.rb:24:in `call'
+ - rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+ - rack (1.6.4) lib/rack/head.rb:13:in `call'
+ - actionpack (4.2.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+ - actionpack (4.2.4) lib/action_dispatch/middleware/flash.rb:260:in `call'
+ - rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+ - rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+ - actionpack (4.2.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+ - activerecord (4.2.4) lib/active_record/query_cache.rb:36:in `call'
+ - activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+ - actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+ - activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+ - activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+ - activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+ - actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+ - actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+ - better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+ - better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+ - better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+ - actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+ - actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+ - railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+ - railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+ - activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+ - activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+ - activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+ - railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+ - actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+ - rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+ - rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+ - activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+ - rack (1.6.4) lib/rack/lock.rb:17:in `call'
+ - actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+ - rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+ - railties (4.2.4) lib/rails/engine.rb:518:in `call'
+ - railties (4.2.4) lib/rails/application.rb:165:in `call'
+ - railties (4.2.4) lib/rails/railtie.rb:194:in `method_missing'
+ - rack-test (0.6.3) lib/rack/mock_session.rb:30:in `request'
+ - rack-test (0.6.3) lib/rack/test.rb:244:in `process_request'
+ - rack-test (0.6.3) lib/rack/test.rb:58:in `get'
+ - /Users/FatMac/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/forwardable.rb:183:in `get'
+ - capybara (2.5.0) lib/capybara/rack_test/browser.rb:60:in `process'
+ - capybara (2.5.0) lib/capybara/rack_test/browser.rb:38:in `block in process_and_follow_redirects'
+ - capybara (2.5.0) lib/capybara/rack_test/browser.rb:37:in `process_and_follow_redirects'
+ - capybara (2.5.0) lib/capybara/rack_test/browser.rb:31:in `follow'
+ - capybara (2.5.0) lib/capybara/rack_test/node.rb:57:in `click'
+ - capybara (2.5.0) lib/capybara/node/element.rb:134:in `block in click'
+ - capybara (2.5.0) lib/capybara/node/base.rb:84:in `synchronize'
+ - capybara (2.5.0) lib/capybara/node/element.rb:134:in `click'
+ - capybara (2.5.0) lib/capybara/node/actions.rb:26:in `click_link'
+ - capybara (2.5.0) lib/capybara/session.rb:698:in `block (2 levels) in <class:Session>'
+ - capybara (2.5.0) lib/capybara/dsl.rb:51:in `block (2 levels) in <module:DSL>'
+ - test/integration/user_can_see_profile_details_test.rb:8:in `block in <class:UserCanSeeProfileDetailsTest>'
+ - minitest (5.8.3) lib/minitest/test.rb:108:in `block (3 levels) in run'
+ - minitest (5.8.3) lib/minitest/test.rb:205:in `capture_exceptions'
+ - minitest (5.8.3) lib/minitest/test.rb:105:in `block (2 levels) in run'
+ - minitest (5.8.3) lib/minitest/test.rb:256:in `time_it'
+ - minitest (5.8.3) lib/minitest/test.rb:104:in `block in run'
+ - minitest (5.8.3) lib/minitest.rb:334:in `on_signal'
+ - minitest (5.8.3) lib/minitest/test.rb:276:in `with_info_handler'
+ - minitest (5.8.3) lib/minitest/test.rb:103:in `run'
+ - minitest (5.8.3) lib/minitest.rb:781:in `run_one_method'
+ - minitest (5.8.3) lib/minitest.rb:308:in `run_one_method'
+ - minitest (5.8.3) lib/minitest.rb:296:in `block (2 levels) in run'
+ - minitest (5.8.3) lib/minitest.rb:295:in `block in run'
+ - minitest (5.8.3) lib/minitest.rb:334:in `on_signal'
+ - minitest (5.8.3) lib/minitest.rb:321:in `with_info_handler'
+ - minitest (5.8.3) lib/minitest.rb:294:in `run'
+ - minitest (5.8.3) lib/minitest.rb:155:in `block in __run'
+ - minitest (5.8.3) lib/minitest.rb:155:in `__run'
+ - minitest (5.8.3) lib/minitest.rb:129:in `run'
+ - minitest (5.8.3) lib/minitest.rb:56:in `block in autorun'
+
