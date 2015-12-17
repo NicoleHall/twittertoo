@@ -3,6 +3,7 @@ require 'test_helper'
 class UserCanSeeProfileDetailsTest < ActionDispatch::IntegrationTest
 
   test "user sees list of tweets after logging in" do
+    skip
     visit "/"
     assert_equal 200, page.status_code
     click_link "login"
@@ -11,7 +12,6 @@ class UserCanSeeProfileDetailsTest < ActionDispatch::IntegrationTest
     # assert page.has_content?("@BenMorganIO taught me how to tweet with the Twitter API!")
     # assert page.has_content?("")
     # assert page.has_content?("")
-save_and_open_page
     assert page.has_link?("logout")
   end
 end
