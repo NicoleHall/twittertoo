@@ -1,7 +1,7 @@
 <% if current_user %>
   <p>hello, <%= current_user.name %></p>
   <%= link_to "logout", logout_path %>
-  <%= link_to "home", home_path %>
+  <%= link_to "All Of My Tweets", my_tweets_path %>
 <% else %>
   <%= link_to "login", login_path %>
 <% end %>

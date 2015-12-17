@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
     if user = User.from_omniauth(request.env["omniauth.auth"])
       session[:user_id] = user.id
     end
-    redirect_to home_path
+    redirect_to timeline_path
   end
 
   def destroy

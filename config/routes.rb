@@ -5,8 +5,8 @@ Rails.application.routes.draw do
 
   get '/auth/twitter/callback', :to => 'sessions#create'
   get '/logout', :to => 'sessions#destroy'
-
-  get '/home', :to => "tweets#index"
+  get '/timeline', :to => "tweets#timeline"
+  get '/my_tweets', :to => "tweets#index"
     # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
