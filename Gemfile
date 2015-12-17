@@ -40,6 +40,12 @@ group :development, :test do
   gem 'pry'
   gem 'launchy'
   gem 'better_errors'
+
+end
+
+group :test do
+  gem 'webmock'
+  gem 'vcr'
 end
 
 group :development do
