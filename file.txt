@@ -1,0 +1,101 @@
+2015-12-17T20:13:19.014610+00:00 heroku[run.9776]: Awaiting client
+2015-12-17T20:13:19.055675+00:00 heroku[run.9776]: Starting process with command `rails console`
+2015-12-17T20:13:19.383848+00:00 heroku[run.9776]: State changed from starting to up
+2015-12-17T20:13:21.403517+00:00 heroku[run.9776]: Process exited with status 2
+2015-12-17T20:15:39.419495+00:00 heroku[api]: Starting process with command `bundle exec rake db:migrate` by nicolealexandrahall@gmail.com
+2015-12-17T20:15:42.815792+00:00 heroku[run.2521]: Awaiting client
+2015-12-17T20:15:42.865072+00:00 heroku[run.2521]: Starting process with command `bundle exec rake db:migrate`
+2015-12-17T20:15:43.249480+00:00 heroku[run.2521]: State changed from starting to up
+2015-12-17T20:15:50.925812+00:00 heroku[run.2521]: Process exited with status 0
+2015-12-17T20:15:50.934745+00:00 heroku[run.2521]: State changed from up to complete
+2015-12-17T20:15:53.458975+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=thawing-citadel-1666.herokuapp.com request_id=684be1d9-321b-4962-83f9-57276a9f2014 fwd="63.145.15.98" dyno= connect= service= status=503 bytes=
+2015-12-17T20:15:53.810218+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=thawing-citadel-1666.herokuapp.com request_id=fec3e8b6-91d2-499d-b453-dac324adb0b8 fwd="63.145.15.98" dyno= connect= service= status=503 bytes=
+2015-12-17T20:16:03.640788+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=thawing-citadel-1666.herokuapp.com request_id=3d029bdc-241e-4cfe-9454-bba7ae20393c fwd="63.145.15.98" dyno= connect= service= status=503 bytes=
+2015-12-17T20:16:03.935080+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=thawing-citadel-1666.herokuapp.com request_id=d9162a87-a5a8-469a-854b-a17f80d79fd8 fwd="63.145.15.98" dyno= connect= service= status=503 bytes=
+2015-12-17T20:16:07.455808+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=thawing-citadel-1666.herokuapp.com request_id=a242a9ae-916e-409a-9b0f-ff159f6adbba fwd="63.145.15.98" dyno= connect= service= status=503 bytes=
+2015-12-17T20:16:07.735268+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=thawing-citadel-1666.herokuapp.com request_id=c8405f97-2cb0-4669-b054-07a00dff19c3 fwd="63.145.15.98" dyno= connect= service= status=503 bytes=
+2015-12-17T20:17:59.133610+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=thawing-citadel-1666.herokuapp.com request_id=fbd153fc-3a06-4795-a536-c6911eb539bd fwd="63.145.15.98" dyno= connect= service= status=503 bytes=
+2015-12-17T20:17:59.517638+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=thawing-citadel-1666.herokuapp.com request_id=097f4579-d447-4f9d-8cbd-83a5020a0314 fwd="63.145.15.98" dyno= connect= service= status=503 bytes=
+2015-12-17T20:27:23.009602+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=thawing-citadel-1666.herokuapp.com request_id=21102301-84bc-41a2-aa6d-198ab0936d74 fwd="63.145.15.98" dyno= connect= service= status=503 bytes=
+2015-12-17T20:27:23.348541+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=thawing-citadel-1666.herokuapp.com request_id=9a2f87bd-8b71-47ae-b721-332602509995 fwd="63.145.15.98" dyno= connect= service= status=503 bytes=
+2015-12-17T20:27:35.214913+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=thawing-citadel-1666.herokuapp.com request_id=e7ad01ef-047a-45dd-abbb-55f180217645 fwd="63.145.15.98" dyno= connect= service= status=503 bytes=
+2015-12-17T20:27:35.531148+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=thawing-citadel-1666.herokuapp.com request_id=2c3a5301-4061-472c-87d2-af8db1a6a192 fwd="63.145.15.98" dyno= connect= service= status=503 bytes=
+2015-12-17T20:28:02.300345+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=thawing-citadel-1666.herokuapp.com request_id=d6381091-d3d8-4791-ae74-e600187e2d8b fwd="63.145.15.98" dyno= connect= service= status=503 bytes=
+2015-12-17T20:28:02.598289+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=thawing-citadel-1666.herokuapp.com request_id=0e7dc70f-714b-4a5a-bffb-11222320e8e6 fwd="63.145.15.98" dyno= connect= service= status=503 bytes=
+2015-12-17T20:28:12.028980+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=thawing-citadel-1666.herokuapp.com request_id=890d49dc-be07-43dc-8217-28874c46d382 fwd="63.145.15.98" dyno= connect= service= status=503 bytes=
+2015-12-17T20:28:12.328575+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=thawing-citadel-1666.herokuapp.com request_id=71f1eaa0-c201-482c-a697-c32d37e265a5 fwd="63.145.15.98" dyno= connect= service= status=503 bytes=
+2015-12-17T20:28:19.304870+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=thawing-citadel-1666.herokuapp.com request_id=568f7cc4-f7bd-4314-a2ea-d7fc8fa012d9 fwd="63.145.15.98" dyno= connect= service= status=503 bytes=
+2015-12-17T20:28:19.014351+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/timeline" host=thawing-citadel-1666.herokuapp.com request_id=514cab5e-f550-4931-9e83-070f95a4c9d9 fwd="63.145.15.98" dyno= connect= service= status=503 bytes=
+2015-12-17T20:29:27.920898+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/timeline" host=thawing-citadel-1666.herokuapp.com request_id=247b4a62-d4cd-4f63-bd1f-33a84e6cb8e8 fwd="63.145.15.98" dyno= connect= service= status=503 bytes=
+2015-12-17T20:29:28.264828+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=thawing-citadel-1666.herokuapp.com request_id=3b06ce4d-627e-4248-90a4-d872e544b96d fwd="63.145.15.98" dyno= connect= service= status=503 bytes=
+2015-12-17T20:30:30.694361+00:00 heroku[api]: Starting process with command `bundle exec rake assets:precompile` by nicolealexandrahall@gmail.com
+2015-12-17T20:30:33.450843+00:00 heroku[run.7977]: Starting process with command `bundle exec rake assets:precompile`
+2015-12-17T20:30:33.431792+00:00 heroku[run.7977]: Awaiting client
+2015-12-17T20:30:33.795909+00:00 heroku[run.7977]: State changed from starting to up
+2015-12-17T20:30:37.883656+00:00 heroku[run.7977]: Process exited with status 0
+2015-12-17T20:30:45.264464+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=thawing-citadel-1666.herokuapp.com request_id=5bdc3d92-b752-48a9-8c38-36989db4e458 fwd="63.145.15.98" dyno= connect= service= status=503 bytes=
+2015-12-17T20:30:45.632070+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=thawing-citadel-1666.herokuapp.com request_id=439e8774-4b8a-4f4c-a600-4c1cd6ab8dab fwd="63.145.15.98" dyno= connect= service= status=503 bytes=
+2015-12-17T20:30:45.650880+00:00 heroku[web.1]: State changed from crashed to starting
+2015-12-17T20:30:48.329795+00:00 heroku[web.1]: Starting process with command `bin/rails server -p 56913 -e production`
+2015-12-17T20:30:50.742153+00:00 app[web.1]: bin/rails: line 2: begin: command not found
+2015-12-17T20:30:50.742162+00:00 app[web.1]: bin/rails: line 3: syntax error near unexpected token `('
+2015-12-17T20:30:50.742163+00:00 app[web.1]: bin/rails: line 3: ` load File.expand_path("../spring", __FILE__)'
+2015-12-17T20:30:51.759697+00:00 heroku[web.1]: Process exited with status 2
+2015-12-17T20:30:51.777993+00:00 heroku[web.1]: State changed from starting to crashed
+2015-12-17T20:30:37.895751+00:00 heroku[run.7977]: State changed from up to complete
+2015-12-17T20:32:36.776428+00:00 heroku[api]: Starting process with command `bundle exec rake routes` by nicolealexandrahall@gmail.com
+2015-12-17T20:32:40.556452+00:00 heroku[run.8541]: Starting process with command `bundle exec rake routes`
+2015-12-17T20:32:40.528966+00:00 heroku[run.8541]: Awaiting client
+2015-12-17T20:32:40.785671+00:00 heroku[run.8541]: State changed from starting to up
+2015-12-17T20:32:45.000663+00:00 heroku[run.8541]: Process exited with status 0
+2015-12-17T20:32:44.985108+00:00 heroku[run.8541]: State changed from up to complete
+2015-12-17T20:43:07.418134+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=thawing-citadel-1666.herokuapp.com request_id=9b707531-0de9-49e2-80bb-95e57b3aaa36 fwd="63.145.15.98" dyno= connect= service= status=503 bytes=
+2015-12-17T20:43:07.888809+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=thawing-citadel-1666.herokuapp.com request_id=c779dafb-4b23-4300-90d4-536f032d8cbd fwd="63.145.15.98" dyno= connect= service= status=503 bytes=
+2015-12-17T20:43:41.305756+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=thawing-citadel-1666.herokuapp.com request_id=d6e69097-0dca-43ce-9511-dbc35ba791f4 fwd="63.145.15.98" dyno= connect= service= status=503 bytes=
+2015-12-17T20:43:41.754426+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=thawing-citadel-1666.herokuapp.com request_id=245a6dbf-aae9-4fbc-9ff9-77add3893f69 fwd="63.145.15.98" dyno= connect= service= status=503 bytes=
+2015-12-17T20:49:26.333770+00:00 heroku[api]: Deploy f8808dc by nicolealexandrahall@gmail.com
+2015-12-17T20:49:26.333770+00:00 heroku[api]: Release v12 created by nicolealexandrahall@gmail.com
+2015-12-17T20:49:26.476896+00:00 heroku[slug-compiler]: Slug compilation started
+2015-12-17T20:49:26.476907+00:00 heroku[slug-compiler]: Slug compilation finished
+2015-12-17T20:49:26.464504+00:00 heroku[web.1]: State changed from crashed to starting
+2015-12-17T20:49:28.243905+00:00 heroku[web.1]: Starting process with command `bin/rails server -p 36323 -e production`
+2015-12-17T20:49:29.466422+00:00 app[web.1]: bin/rails: line 2: begin: command not found
+2015-12-17T20:49:29.466700+00:00 app[web.1]: bin/rails: line 3: syntax error near unexpected token `('
+2015-12-17T20:49:29.466701+00:00 app[web.1]: bin/rails: line 3: `load File.expand_path("../spring", __FILE__)'
+2015-12-17T20:49:29.972838+00:00 heroku[web.1]: Process exited with status 2
+2015-12-17T20:49:29.986392+00:00 heroku[web.1]: State changed from crashed to starting
+2015-12-17T20:49:29.985470+00:00 heroku[web.1]: State changed from starting to crashed
+2015-12-17T20:49:32.320732+00:00 heroku[web.1]: Starting process with command `bin/rails server -p 16974 -e production`
+2015-12-17T20:49:34.243029+00:00 app[web.1]: bin/rails: line 2: begin: command not found
+2015-12-17T20:49:34.248073+00:00 app[web.1]: bin/rails: line 3: syntax error near unexpected token `('
+2015-12-17T20:49:34.248077+00:00 app[web.1]: bin/rails: line 3: `load File.expand_path("../spring", __FILE__)'
+2015-12-17T20:49:35.323141+00:00 heroku[web.1]: Process exited with status 2
+2015-12-17T20:49:35.329459+00:00 heroku[web.1]: State changed from starting to crashed
+2015-12-17T20:50:11.872879+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=thawing-citadel-1666.herokuapp.com request_id=1342562a-9561-4df3-b25a-a29b6ff6dd66 fwd="63.145.15.98" dyno= connect= service= status=503 bytes=
+2015-12-17T20:50:14.164368+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=thawing-citadel-1666.herokuapp.com request_id=02cb0f0c-a016-4836-a917-72f676947de0 fwd="63.145.15.98" dyno= connect= service= status=503 bytes=
+2015-12-17T20:53:06.716245+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=thawing-citadel-1666.herokuapp.com request_id=65d93cc1-d6c7-470b-86bf-5c56a1c85b6c fwd="63.145.15.98" dyno= connect= service= status=503 bytes=
+2015-12-17T20:53:07.077566+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=thawing-citadel-1666.herokuapp.com request_id=ca8744ce-9f86-4c65-b6fb-353edf41013a fwd="63.145.15.98" dyno= connect= service= status=503 bytes=
+2015-12-17T21:02:56.888081+00:00 heroku[slug-compiler]: Slug compilation started
+2015-12-17T21:02:56.888092+00:00 heroku[slug-compiler]: Slug compilation finished
+2015-12-17T21:02:56.738719+00:00 heroku[api]: Deploy 191f02f by nicolealexandrahall@gmail.com
+2015-12-17T21:02:56.738719+00:00 heroku[api]: Release v13 created by nicolealexandrahall@gmail.com
+2015-12-17T21:02:56.843537+00:00 heroku[web.1]: State changed from crashed to starting
+2015-12-17T21:02:58.716063+00:00 heroku[web.1]: Starting process with command `bin/rails server -p 36490 -e production`
+2015-12-17T21:03:00.053966+00:00 app[web.1]: bin/rails: line 2: begin: command not found
+2015-12-17T21:03:00.054286+00:00 app[web.1]: bin/rails: line 3: `load File.expand_path("../spring", __FILE__)'
+2015-12-17T21:03:00.054283+00:00 app[web.1]: bin/rails: line 3: syntax error near unexpected token `('
+2015-12-17T21:03:00.650254+00:00 heroku[web.1]: Process exited with status 2
+2015-12-17T21:03:00.661728+00:00 heroku[web.1]: State changed from starting to crashed
+2015-12-17T21:03:00.662745+00:00 heroku[web.1]: State changed from crashed to starting
+2015-12-17T21:03:03.486729+00:00 heroku[web.1]: Starting process with command `bin/rails server -p 25513 -e production`
+2015-12-17T21:03:05.609127+00:00 app[web.1]: bin/rails: line 2: begin: command not found
+2015-12-17T21:03:05.609923+00:00 app[web.1]: bin/rails: line 3: syntax error near unexpected token `('
+2015-12-17T21:03:05.609926+00:00 app[web.1]: bin/rails: line 3: `load File.expand_path("../spring", __FILE__)'
+2015-12-17T21:03:06.571697+00:00 heroku[web.1]: Process exited with status 2
+2015-12-17T21:03:07.998486+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/timeline" host=thawing-citadel-1666.herokuapp.com request_id=4f1923eb-955b-4f50-a446-bdc9331409ea fwd="63.145.15.98" dyno= connect= service= status=503 bytes=
+2015-12-17T21:03:08.456695+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=thawing-citadel-1666.herokuapp.com request_id=7886395c-d3df-4068-b8ee-5ea8675f13c6 fwd="63.145.15.98" dyno= connect= service= status=503 bytes=
+2015-12-17T21:03:22.645973+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/timeline" host=thawing-citadel-1666.herokuapp.com request_id=faf4c057-a5e0-4b94-91a4-1cc7ad1e45a7 fwd="63.145.15.98" dyno= connect= service= status=503 bytes=
+2015-12-17T21:03:23.045752+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=thawing-citadel-1666.herokuapp.com request_id=f9b44ddd-5396-498f-9f02-9ca7d6b041b0 fwd="63.145.15.98" dyno= connect= service= status=503 bytes=
+2015-12-17T21:03:38.497032+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=thawing-citadel-1666.herokuapp.com request_id=91440d49-6642-4c44-8607-a1b11a683780 fwd="63.145.15.98" dyno= connect= service= status=503 bytes=
+2015-12-17T21:03:38.813721+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=thawing-citadel-1666.herokuapp.com request_id=13073c82-87a4-46fa-8ee1-369057a78514 fwd="63.145.15.98" dyno= connect= service= status=503 bytes=
+2015-12-17T21:03:06.589915+00:00 heroku[web.1]: State changed from starting to crashed
