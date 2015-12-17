@@ -7,13 +7,11 @@ class TweetsController < ApplicationController
 
   def timeline
     @timeline = service.timeline
+    @followers = service.followers
   end
 
-
-private
 
   def service
     @service ||= TwitterService.new(current_user)
   end
-
 end

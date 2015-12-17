@@ -1,7 +1,8 @@
 <% if current_user %>
   <p>hello, <%= current_user.name %></p>
-  <%= link_to "logout", logout_path %>
-  <%= link_to "All Of My Tweets", my_tweets_path %>
+  <%= link_to "logout", logout_path %><br>
+  <%= link_to "All Of My Tweets", my_tweets_path %><br>
+  <%= link_to "My Timeline", timeline_path %><br>
 <% else %>
   <%= link_to "login", login_path %>
 <% end %>
