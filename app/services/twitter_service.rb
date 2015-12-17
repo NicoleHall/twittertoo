@@ -19,4 +19,8 @@ class TwitterService
     @client.home_timeline
   end
 
+  def followers
+    @client.followers
+  end
+
 end
