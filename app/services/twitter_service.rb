@@ -15,4 +15,8 @@ class TwitterService
     @client.user_timeline  #defalts to oath keys on the client (user.uid.to_i)
   end
 
+  def timeline
+    @client.home_timeline
+  end
+
 end

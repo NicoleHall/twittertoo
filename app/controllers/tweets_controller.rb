@@ -5,6 +5,10 @@ class TweetsController < ApplicationController
     @tweets = service.tweets
   end
 
+  def timeline
+    @timeline = service.timeline
+  end
+
 
 private
 

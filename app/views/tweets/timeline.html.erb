@@ -1,0 +1,12 @@
+
+<h4 class="center-align"><%=current_user.screen_name%>: Here Are The Tweets From The Folks You Follow</h4>
+<% @timeline.each do |status|%>
+<div class="row">
+   <div class="col s12">
+     <div class="card-panel teal">
+       <span class="white-text"><%= status.text %><br></span>
+     </div>
+   </div>
+ </div>
+
+<% end %>
