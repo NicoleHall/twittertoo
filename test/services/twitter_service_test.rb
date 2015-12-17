@@ -16,4 +16,13 @@ class TwitterServiceTest < ActiveSupport::TestCase
       assert_equal 'I like tweeting and testing!',  first_of_my_own_tweets.text
     end
   end
+
+  test 'timeline method shows tweets from followed folks' do
+    VCR.use_cassette('twitter_service#timeline') do
+      tweets = service.tweets
+      first_of_timeline  = @service.timeline.first
+
+      assert_equal 'The creators of the ColecoVision are back with a new cartridge-based console https://t.co/pkUm2RpPW6 https://t.co/LwQb0QCIfo',  first_of_timeline.text
+    end
+  end
 end
