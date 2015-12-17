@@ -228,25 +228,6 @@
         null,
         null
       ],
-      "/Users/FatMac/turing/module_three/projects/twittertoo/test/integration/user_can_see_profile_details_test.rb": [
-        1,
-        null,
-        1,
-        null,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        null,
-        null,
-        null,
-        null,
-        0,
-        null,
-        null
-      ],
       "/Users/FatMac/turing/module_three/projects/twittertoo/test/integration/user_logs_in_with_twitter_test.rb": [
         1,
         null,
@@ -274,8 +255,58 @@
         null,
         null
       ],
-      "/Users/FatMac/turing/module_three/projects/twittertoo/test/service/twitter_service_test.rb": [
-
+      "/Users/FatMac/turing/module_three/projects/twittertoo/test/services/twitter_service_test.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/FatMac/turing/module_three/projects/twittertoo/app/services/twitter_service.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        null
       ],
       "/Users/FatMac/turing/module_three/projects/twittertoo/app/models/user.rb": [
         1,
@@ -346,6 +377,6 @@
         null
       ]
     },
-    "timestamp": 1450369663
+    "timestamp": 1450375737
   }
 }
