@@ -10,19 +10,6 @@ class User < ActiveRecord::Base
     end
   end
 
-  # def client
-  #   @client ||= Twitter::REST::Client.new do |config|
-  #     config.consumer_key = ENV["consumer_key"]
-  #     config.consumer_secret = ENV["consumer_secret"]
-  #     config.access_token = self.oauth_token
-  #     config.access_token_secret = self.oauth_token_secret
-  #   end
-  # end
 
-
-
-  # def description
-  #   client.user_description(self.uid.to_i)
-  # end
 
 end
