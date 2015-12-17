@@ -1,5 +1,5 @@
 class TwitterService
-  attr_reader :client, :user
+  attr_reader :client, :user, :connection
 
   def initialize(user)
     @user ||= user
