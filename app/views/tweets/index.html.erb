@@ -3,6 +3,6 @@
 <% @tweets.each do |tweet| %>
 <%= tweet.text %><br>
 <% end %>
-
-
-<%= link_to "logout", logout_path %>
+<br>
+<%= render "navbar" %><br>
+<%= render "logout" %>

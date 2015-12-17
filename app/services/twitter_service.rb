@@ -23,4 +23,8 @@ class TwitterService
     @client.followers
   end
 
+  def compose_tweet(text)
+    @client.update(text)
+  end
+
 end

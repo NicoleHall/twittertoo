@@ -1,0 +1,11 @@
+<p>
+  <%= form_for :tweet, url: tweets_path, method: :post do |f| %>
+    <%= f.label "Type Tweet Here" %>
+    <%= f.text_field :message %>
+    <%= f.submit "Send Tweet" %>
+  <% end %>
+</p>
+<br>
+<%= render "navbar" %>
+<br>
+<%= render "logout" %>

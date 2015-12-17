@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get '/logout', :to => 'sessions#destroy'
   get '/timeline', :to => "tweets#timeline"
   get '/my_tweets', :to => "tweets#index"
+  resources :tweets, only: [:new, :create]
     # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

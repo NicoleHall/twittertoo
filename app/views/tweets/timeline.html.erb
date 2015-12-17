@@ -1,4 +1,5 @@
-<%= render "profile" %>
+<%= render "profile" %><br>
+<%= render "compose_tweet" %>
 
 <h4 class="center-align"><%=current_user.screen_name%>: Here Are The Tweets From The Folks You Follow</h4>
 <% @timeline.each do |status|%>
@@ -11,3 +12,6 @@
  </div>
 
 <% end %>
+
+<%= render "logout" %><br>
+<%= render "navbar" %>
